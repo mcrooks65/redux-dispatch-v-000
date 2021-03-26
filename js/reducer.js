@@ -11,7 +11,7 @@ function changeState(state, action){
 
 function dispatch(action){
   state = changeState(state,action)
-  return state
+  render();
 }
 
 function render(){
@@ -21,4 +21,3 @@ function render(){
 dispatch({type: 'INCREASE_COUNT'})
 dispatch({type: 'INCREASE_COUNT'})
 dispatch({type: 'INCREASE_COUNT'})
-render();
