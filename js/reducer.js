@@ -12,7 +12,6 @@ function dispatch(action){
   return state
 }
 
-let state = {count: 0}
-let action = {type: 'INCREASE_COUNT'}
-
-changeState(state, action)
+dispatch({type: 'INCREASE_COUNT'})
+dispatch({type: 'INCREASE_COUNT'})
+dispatch({type: 'INCREASE_COUNT'})
